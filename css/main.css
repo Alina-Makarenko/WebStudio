@@ -1,0 +1,36 @@
+:root{
+    --logo-color: rgba(0, 0, 0, 1);
+    --subtitles-color: rgba(33, 33, 33, 1);
+    --accent-color: rgba(33, 150, 243, 1);
+    --button-color: rgba(245, 244, 250, 1);
+    --titles-color: rgba(255, 255, 255, 1);
+    --text-color: rgba(117, 117, 117, 1);
+    --contacts-color:rgba(255, 255, 255, 0.6);
+}
+/* Header */
+.link{
+    color:var(--subtitles-color)
+}
+.link:hover{
+    color: var(--accent-color);
+}
+/* Hero section */
+.button{
+    background-color:var(--button-color);
+    color:var(--subtitles-color);
+    width: 125px;
+    height: 38px;
+}
+.button:hover{
+    background-color:var(--accent-color);
+    color:var(--titles-color);
+}
+.title{
+    color:var(--subtitles-color);
+}
+.text{
+    color:var(--text-color);
+}
+#contact{
+    color:var(--contacts-color);
+}
