@@ -10,8 +10,11 @@
 }
 /* Header */
 .logo{
-    color:var(--logo-color)
+    color:var(--accent-color)
 }
+/* logo[Studio]{
+    color:var(--logo-color);
+} */
 .link{
     color:var(--subtitles-color)
 }
@@ -58,9 +61,9 @@
     color:var(--background-color);
 }
 /* Footer */
-address{
+/* address{
     color:var(--title-color);
 }
 #contact{
     color:var(--contact-color)
-}
+} */
