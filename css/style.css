@@ -10,19 +10,24 @@
 }
 /* Header */
 .logo{
-    color:var(--accent-color)
+    color:var(--accent-color);
+    font-family:Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
 }
-/* logo[Studio]{
+logo[Studio]{
     color:var(--logo-color);
-} */
+}
 .link{
-    color:var(--subtitles-color)
+    color:var(--subtitles-color);
+    font-family: Roboto
 }
 .link:hover{
     color: var(--accent-color);
 }
 /* Hero section */
-.box{
+.section{
     width: 1600px;
     height: 600px;
     top: 80px;
@@ -31,7 +36,8 @@
 .title{
     width: 696px;
     height: 120px;
-    color:var(--title-color)
+    color:var(--title-color);
+    font-family: Roboto;
 }
 .button{
     background-color:var(--accent-color);
@@ -39,31 +45,42 @@
     height: 50px;
     top: 430px;
     left: 692px;
-    color:var(--title-color)
+    color:var(--title-color);
+    font-family: Roboto;
 }
 /* Переваги наших послуг  */
 .subtitles{
     width: 270px;
     height: 16px;
-    color:var(--subtitles-color)
+    color:var(--subtitles-color);
+    font-family: Roboto;
 }
 .text{
     color:var(--text-color);
+    font-family: Roboto;
 }
 /* Чим ми займаємось? */
 .subtitle{
     color:var(--subtitles-color);
+    font-family: Roboto;
 }
 /* Наша команда */
 .section{
     width:1600px;
     height:648px;
     color:var(--background-color);
+    font-family: Roboto;
 }
 /* Footer */
-/* address{
+address{
     color:var(--title-color);
 }
 #contact{
-    color:var(--contact-color)
+    color:var(--contact-color);
+    font-family: Roboto;
+}
+/* .box{
+    width: 1600px;
+    height: 252px;
+    color:var(--hero-section-footer-color);
 } */

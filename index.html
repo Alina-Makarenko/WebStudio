@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -12,7 +18,9 @@
       <nav>
         <ul>
           <li><a class="link" href="./index.html">Студія</a></li>
-          <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
+          <li>
+            <a class="link" href="./pages.html/portfolio.html">Портфоліо</a>
+          </li>
           <li><a class="link" href="./">Контакти</a></li>
         </ul>
       </nav>
@@ -27,7 +35,7 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="box">
+      <section class="section">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button">Замовити послугу</button>
       </section>
@@ -94,7 +102,7 @@
       <section>
         <h2 class="subtitle">Наша команда</h2>
         <ul>
-          <li class="boxes">
+          <li>
             <img
               src="./images/product-designer.png"
               alt="product designer"
@@ -103,7 +111,7 @@
             <h3 class="subtitles">Ігор Дем'яненко</h3>
             <p class="text">Product Designer</p>
           </li>
-          <li class="boxes">
+          <li>
             <img
               src="./images/frontend-developer.png"
               alt="frontend developer"
@@ -112,12 +120,12 @@
             <h3 class="subtitles">Ольга Рєпіна</h3>
             <p class="text">Frontend Developer</p>
           </li>
-          <li class="boxes">
+          <li>
             <img src="./images/marketing.png" alt="marketing" width="270" />
             <h3 class="subtitles">Микола Тарасов</h3>
             <p class="text">Marketing</p>
           </li>
-          <li class="boxes">
+          <li>
             <img src="./images/designer.jpg" alt="ui designer" width="270" />
             <h3 class="subtitles">Михайло Єрмаков</h3>
             <p class="text">UI Designer</p>
@@ -125,7 +133,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="box">
       <a class="logo">WebStudio</a>
       <address class="address">
         <a
