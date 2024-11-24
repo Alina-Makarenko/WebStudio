@@ -1,5 +1,6 @@
 a{
     text-decoration: none;
+    font-style: normal;
 }
 ul{
     margin: 0;
@@ -11,4 +12,7 @@ h1, h2, h3, p{
 }
 img{
     display: block;
+}
+address{
+    font-style: normal;
 }
