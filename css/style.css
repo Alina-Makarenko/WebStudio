@@ -8,10 +8,22 @@
     --title-color: rgba(255, 255, 255, 1);
     --contact-color: rgba(255, 255, 255, 0.6);
 }
+.container{
+    width: 1200px;
+    outline: solid 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 body{
     font-family: "Roboto";
 }
 /* Header */
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 .header-logo{
     color:var(--accent-color);
     font-family:Raleway;
@@ -47,6 +59,8 @@ letter-spacing: 0.28px;
     height: 600px;
     top: 80px;
     background-color: var(--hero-section-footer-color);
+    padding-top: 200px;
+    padding-bottom: 200pt;
 }
 .hero-title{
     color: var(--title-color);
@@ -69,6 +83,10 @@ letter-spacing: 0.28px;
     line-height: 1.87;
 }
 /* Переваги наших послуг  */
+.advantages{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .advantages-subtitles{
     width: 270px;
     height: 16px;
@@ -86,6 +104,10 @@ font-weight: 400;
 line-height:1.71;
 }
 /* Чим ми займаємось? */
+.works{
+    padding-top: 94px;
+    padding-bottom: 84px;
+}
 .works-subtitle{
     color:var(--subtitles-color);
     font-size: 36px;
@@ -97,11 +119,11 @@ line-height: 1.17;
     height: 294px; 
 }
 /* Наша команда */
-/* .team{
-    width:1600px;
-    height:648px;
-    color:var(--background-color);
-} */
+ .team{
+    background-color: var(--background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+ }
 .team-title{
     color:var(--subtitles-color);
     text-align: center;
@@ -126,6 +148,10 @@ font-weight: 400;
 line-height:1.19;
 }
 /* Портфоліо */
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio-btn{
     background-color:var(--button-color);
     color:var(--subtitles-color);
@@ -161,6 +187,8 @@ letter-spacing: 0.48px;
     background-color: var(--hero-section-footer-color);
     width: 1600px;
     height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-link{
     color:var(--title-color);
