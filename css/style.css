@@ -7,10 +7,12 @@
     --background-color:rgba(245, 244, 250, 1);
     --title-color: rgba(255, 255, 255, 1);
     --contact-color: rgba(255, 255, 255, 0.6);
+    --border-color: rgba(238, 238, 238, 1);
+    --portfolio-color: rgba(236, 236, 236, 1);
 }
 .container{
     width: 1200px;
-    outline: solid 2px black;
+    /* outline: solid 2px black; */
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -29,10 +31,12 @@ body{
     display: flex;
     align-items: center;
 }
+.header-navigation{
+    margin-right: 344px;
+}
 .nav-list{
     display: flex;
     gap: 50px;
-    margin-right: 344px;
 }
 .header-logo{
     margin-right: 93px;
@@ -57,7 +61,8 @@ letter-spacing: 0.28px;
 }
 .header-list{
     display: flex;
-    gap:50px;
+    gap: 50px;
+    margin-left: auto;
 }   
 .header-link{
     color:var(--text-color);
@@ -98,6 +103,7 @@ letter-spacing: 0.28px;
     font-weight: 700;
     line-height: 1.87;
     padding:10px 32px ;
+    border-radius: 4px;
     border: none;
 }
 /* Переваги наших послуг  */
@@ -106,6 +112,11 @@ letter-spacing: 0.28px;
     padding-bottom: 94px;
     display: flex;
     gap:30px ;
+}
+.advantages-list{
+    display: flex;
+    gap: 30px;
+   
 }
 .advantages-subtitles{
     width: 270px;
@@ -140,9 +151,9 @@ margin-bottom: 50px;
     display: flex;
     gap: 30px;
 }
-.works-picture{
+.works-pictures{
     width: 370px;
-    height: 294px; 
+    height: 294px;
 }
 /* Наша команда */
  .team{
@@ -162,10 +173,12 @@ margin-bottom: 50px;
     display: flex;
     gap: 30px;
 }
+.team-picture{
+    width: 270px;
+    height: 260px;
+}
 .team-employees{
     background-color: var(--title-color);
-
-    
 }
 .team-subtitles{
     color: var(--subtitle-color);
@@ -188,9 +201,18 @@ padding-bottom: 30px;
 .portfolio{
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--title-color);
+    border: 1px solid var(--portfolio-color);
+}
+.button-list{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
 }
 .portfolio-btn{
-    background-color:var(--button-color);
+    background-color:var(--background-color);
     color:var(--subtitles-color);
     width: 125px;
     height: 38px;
@@ -199,11 +221,23 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62;
 letter-spacing: 0.48px;
+padding: 6px 22px;
+border: none;
+border-radius: 4px;
     
 }
 .portfolio-btn:hover{
     background-color:var(--accent-color);
     color: var(--title-color);
+    padding: 6px 25px;
+}
+.portfolio-list{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.portfolio-info{
+    outline: 1px solid var(--border-color);
 }
 .portfolio-title{
     color:var(--subtitles-color);
@@ -211,6 +245,7 @@ letter-spacing: 0.48px;
 font-weight: 700;
 line-height: 2;
 letter-spacing: 1.08px;
+margin-top: 20px;
 }
 .portfolio-text{
     color:var(--text-color);
@@ -218,6 +253,7 @@ letter-spacing: 1.08px;
 font-weight: 400;
 line-height: 1.87;
 letter-spacing: 0.48px;
+margin-bottom: 20px;
 }
 /* Footer */
 .footer{
@@ -232,7 +268,7 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
-display: block;
+display: inline-block;
 margin-bottom: 20px;
 }
 span.footer-element{
@@ -247,7 +283,13 @@ letter-spacing: 0.42px;
 }
 .footer-address{
     color:var(--title-color);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
+ .footer-item{
+    margin-bottom: 9px;
+ }
 .footer-contact{
     color:var(--contact-color);
     font-size: 14px;
