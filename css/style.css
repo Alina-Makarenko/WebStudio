@@ -229,15 +229,17 @@ border-radius: 4px;
 .portfolio-btn:hover{
     background-color:var(--accent-color);
     color: var(--title-color);
-    padding: 6px 25px;
 }
 .portfolio-list{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
-.portfolio-info{
+.portfolio-item{
     outline: 1px solid var(--border-color);
+}
+.portfolio-info{
+    padding: 20px 24px;
 }
 .portfolio-title{
     color:var(--subtitles-color);
@@ -245,7 +247,6 @@ border-radius: 4px;
 font-weight: 700;
 line-height: 2;
 letter-spacing: 1.08px;
-margin-top: 20px;
 }
 .portfolio-text{
     color:var(--text-color);
