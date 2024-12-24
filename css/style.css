@@ -31,9 +31,6 @@ body{
     display: flex;
     align-items: center;
 }
-.header-navigation{
-    margin-right: 344px;
-}
 .nav-list{
     display: flex;
     gap: 50px;
@@ -179,6 +176,8 @@ margin-bottom: 50px;
 }
 .team-employees{
     background-color: var(--title-color);
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .team-subtitles{
     color: var(--subtitle-color);
@@ -186,7 +185,6 @@ margin-bottom: 50px;
     font-size: 16px;
     font-weight: 500;
     line-height:1.19;
-    padding-top: 30px;
     margin-bottom: 10px;
 }
 .team-text{
@@ -195,7 +193,6 @@ text-align: center;
 font-size: 16px;
 font-weight: 400;
 line-height:1.19;
-padding-bottom: 30px;
 }
 /* Портфоліо */
 .portfolio{
@@ -247,6 +244,7 @@ border-radius: 4px;
 font-weight: 700;
 line-height: 2;
 letter-spacing: 1.08px;
+margin-bottom: 4px;
 }
 .portfolio-text{
     color:var(--text-color);
@@ -254,7 +252,6 @@ letter-spacing: 1.08px;
 font-weight: 400;
 line-height: 1.87;
 letter-spacing: 0.48px;
-margin-bottom: 20px;
 }
 /* Footer */
 .footer{
@@ -288,7 +285,7 @@ letter-spacing: 0.42px;
     flex-direction: column;
     gap: 9px;
 }
- .footer-item{
+ .footer-item:first-child{
     margin-bottom: 9px;
  }
 .footer-contact{
