@@ -229,11 +229,12 @@ border-radius: 4px;
 }
 .portfolio-list{
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .portfolio-item{
     outline: 1px solid var(--border-color);
+    flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-info{
     padding: 20px 24px;
