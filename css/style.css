@@ -113,7 +113,18 @@ letter-spacing: 0.28px;
 .advantages-list{
     display: flex;
     gap: 30px;
-   
+}
+.advantages-item::before{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 100%;
+    background-image: url(../images/antenna.webp), url(../images/clock.webp), url(../images/diagram.webp), url(../images/astronaut.webp);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left, center, center, right;
+    background-color: var(--background-color);
+    border-radius: 4px;
 }
 .advantages-subtitles{
     width: 270px;
