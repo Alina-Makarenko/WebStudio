@@ -118,14 +118,25 @@ letter-spacing: 0.28px;
     content: "";
     display: block;
     width: 270px;
-    height: 100%;
-    background-image: url(../images/antenna.webp), url(../images/clock.webp), url(../images/diagram.webp), url(../images/astronaut.webp);
+    height: 120px;
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: left, center, center, right;
+    background-position: center;
     background-color: var(--background-color);
     border-radius: 4px;
+    margin-bottom: 30px;
 }
+ .advantages-item:first-child::before{
+    background-image: url(../images/antenna.webp);
+ }
+ .advantages-item:nth-child(2)::before{
+    background-image: url(../images/clock.webp);
+ }
+ .advantages-item:nth-child(3)::before{
+    background-image: url(../images/diagram.webp);
+ }
+ .advantages-item:last-child::before{
+    background-image: url(../images/astronaut.webp);
+ }
 .advantages-subtitles{
     width: 270px;
     height: 16px;
@@ -189,6 +200,7 @@ margin-bottom: 50px;
     background-color: var(--title-color);
     padding-bottom: 30px;
     padding-top: 30px;
+    border-radius: 4px;
 }
 .team-subtitles{
     color: var(--subtitle-color);
