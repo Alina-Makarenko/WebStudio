@@ -9,6 +9,15 @@
     --contact-color: rgba(255, 255, 255, 0.6);
     --border-color: rgba(238, 238, 238, 1);
     --portfolio-color: rgba(236, 236, 236, 1);
+    --gradient-color:rgba(47, 48, 58, 0.4);
+    --shadow:rgba(0, 0, 0, 0.12);
+    --shadow-team:rgba(0, 0, 0, 0.14);
+    --shadow-employees:rgba(0, 0, 0, 0.20);
+    --button:rgba(0, 0, 0, 0.15);
+    --btn-hover:rgba(0, 0, 0, 0.10);
+    --btn-portfolio:rgba(0, 0, 0, 0.08);
+    --portfolio-item:rgba(0, 0, 0, 0.06);
+    --item:rgba(0, 0, 0, 0.16);
 }
 .container{
     width: 1200px;
@@ -73,10 +82,11 @@ letter-spacing: 0.28px;
 /* Hero section */
 .hero{
     top: 80px;
-    background-color: var(--hero-section-footer-color);
+    /* background-color: var(--hero-section-footer-color); */
     padding-top: 200px;
     padding-bottom: 200pt;
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.4)), url(../images/team.webp);
 }
 .hero-title{
     color: var(--title-color);
@@ -102,6 +112,7 @@ letter-spacing: 0.28px;
     padding:10px 32px ;
     border-radius: 4px;
     border: none;
+    box-shadow: 0px 4px 4px 0px var(--button);
 }
 /* Переваги наших послуг  */
 .advantages{
@@ -121,6 +132,7 @@ letter-spacing: 0.28px;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 70px;
     background-color: var(--background-color);
     border-radius: 4px;
     margin-bottom: 30px;
@@ -201,6 +213,7 @@ margin-bottom: 50px;
     padding-bottom: 30px;
     padding-top: 30px;
     border-radius: 4px;
+    box-shadow: 0px 1px 3px 0px var(--shadow), 0px 1px 1px 0px var(--shadow-team), 0px 2px 1px 0px var(--shadow-employees);
 }
 .team-subtitles{
     color: var(--subtitle-color);
@@ -249,6 +262,7 @@ border-radius: 4px;
 .portfolio-btn:hover{
     background-color:var(--accent-color);
     color: var(--title-color);
+    box-shadow: 0px 3px 1px 0px var(--btn-hover), 0px 1px 2px 0px var(--btn-portfolio), 0px 2px 2px 0px var(--shadow);
 }
 .portfolio-list{
     display: flex;
@@ -258,6 +272,9 @@ border-radius: 4px;
 .portfolio-item{
     outline: 1px solid var(--border-color);
     flex-basis: calc((100% - 60px) / 3);
+}
+.portfolio-item:hover{
+    box-shadow: 0px 1px 1px 0px var(--shadow), 0px 4px 4px 0px var(--portfolio-item), 1px 4px 6px 0px var(--item);
 }
 .portfolio-info{
     padding: 20px 24px;
