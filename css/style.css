@@ -23,7 +23,7 @@
 }
 .container{
     width: 1200px;
-    /* outline: solid 2px black; */
+    outline: solid 2px blue;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -87,9 +87,14 @@ display: flex;
         }
 }
 .header-icon{
+    width: 16px;
+height: 12px;
+fill: var(--text-color);
+margin-right:  10px; ;
+}
+.icon{
     width: 10px;
 height: 16px;
-fill: var(--text-color);
 }
 .header-icon::before{
     content: "";
