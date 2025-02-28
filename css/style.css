@@ -3,7 +3,7 @@
     --logo-color:rgba(0, 0, 0, 1);
     --subtitles-color:rgba(33, 33, 33, 1);
     --text-color:rgba(117, 117, 117, 1);
-    --hero-section-footer-color: rgba(47, 48, 58, 1);
+    --hero-section: rgba(47, 48, 58, 1);
     --background-color:rgba(245, 244, 250, 1);
     --title-color: rgba(255, 255, 255, 1);
     --contact-color: rgba(255, 255, 255, 0.6);
@@ -19,7 +19,8 @@
     --portfolio-item:rgba(0, 0, 0, 0.06);
     --item:rgba(0, 0, 0, 0.16);
     --costomers:rgba(175, 177, 184, 1);
-    --footer: rgba(255, 255, 255, 0.10);;
+    --footer: rgba(255, 255, 255, 0.10);
+    --works-color:rgba(47, 48, 58, 0.80);
 }
 .container{
     width: 1200px;
@@ -203,9 +204,29 @@ margin-bottom: 50px;
     display: flex;
     gap: 30px;
 }
+.works-item{
+    position: relative;
+}
 .works-pictures{
     width: 370px;
     height: 294px;
+}
+.works-text{
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background-color: var(--works-color);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 /* Наша команда */
  .team{
@@ -387,7 +408,7 @@ letter-spacing: 0.48px;
 }
 /* Footer */
 .footer{
-    background-color: var(--hero-section-footer-color);
+    background-color: var(--hero-section);
     padding-top: 60px;
     padding-bottom: 60px;
 }
