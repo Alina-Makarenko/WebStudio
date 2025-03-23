@@ -63,7 +63,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Переваги наших послуг -->
@@ -426,5 +426,42 @@
         </ul>
       </div>
     </footer>
+    <div class="backgdrop is-hidden" data-modal>
+      <div class="model">
+<button type="button" data-modal-close class="modal-close"></button>
+<h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+<form class="modal-form">
+  <label class="modal-label" for="">Ім'я
+<input class="modal-input" type="text" required>
+<svg class="modal-cros">
+  <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+</svg>
+  </label>
+  <label class="modal-label" for="">Телефон
+    <input class="modal-input" type="tel" required>
+    <svg class="modal-cros">
+      <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+    </svg>
+      </label>
+      <label class="modal-label" for="">Пошта
+        <input class="modal-input" type="mail" required>
+        <svg class="modal-cros">
+          <use href="./images/symbol-defs.svg#icon-email-black-18dp"></use>
+        </svg>
+          </label>
+              <label class="modal-label" for="">Коментар
+                <textarea class="modal-coment" placeholder="Введіть текст"></textarea>
+                  </label>
+                  <div class="modal-wrap">
+                  <input type="checkbox" class="modal-chek" required>
+                  <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
+                  <a href="" class="modal-link">Умови договору</a>
+                </div>
+                  <button type="submit" class="modal-btn">Відправити</button>
+                
+</form>
+      </div>
+    </div>
+    <script src="./modal.js" type="module"></script>
   </body>
 </html>
