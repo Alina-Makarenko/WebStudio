@@ -67,6 +67,9 @@ span.header-element{
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .nav-link::after{
     content: "";
@@ -80,6 +83,9 @@ letter-spacing: 0.28px;
    bottom: -34px;
    /* opacity: 0; */
    visibility: hidden;
+   transition-property: visibility;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .nav-link:hover::after{
     display: block;
@@ -102,6 +108,9 @@ line-height: 1.14;
 letter-spacing: 0.28px;
 display: flex;
     align-items: center;
+    transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .header-link:hover{
     color: var(--accent-color);
@@ -312,6 +321,9 @@ background-color: var(--title-color);
 display: flex;
 justify-content: center;
 align-items: center;
+transition-property:background-color, fill;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .team-link:hover{
     background-color: var(--accent-color);
@@ -351,6 +363,9 @@ border: 1px solid var(--costomers);
 display: flex;
 align-items: center;
 justify-content: center;
+transition-property:fill;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .customers-link:hover{
     border: 1px solid var(--accent-color);
@@ -388,6 +403,9 @@ letter-spacing: 0.48px;
 padding: 6px 22px;
 border: none;
 border-radius: 4px;
+transition-property:background-color, color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
     
 }
 .portfolio-btn:hover{
@@ -521,6 +539,9 @@ border-radius: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
+transition-property:background-color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .footer-links:hover{
     background-color: var(--accent-color);
