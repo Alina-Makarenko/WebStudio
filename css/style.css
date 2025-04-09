@@ -128,10 +128,16 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 height: 12px;
 fill: var(--text-color);
 margin-right:  10px; ;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
 }
 .icon{
     width: 10px;
 height: 16px;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
 }
 .header-icon::before{
     content: "";
@@ -340,6 +346,9 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
     fill: var(--costomers);
     width: 20px;
 height: 20px;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
 }
 /* Постійні клієнти */
 .customers{
@@ -482,7 +491,9 @@ letter-spacing: 0.48px;
 .footer-list{
     display: flex;
     align-items:baseline;
-    gap: 70px;
+}
+.link-box{
+    margin-right: 70px;
 }
 .footer-logo{
     color: var(--accent-color);
@@ -520,6 +531,10 @@ font-weight: 400;
 line-height: 1.71;
 letter-spacing: 0.42px;
 }
+ /* Посилання  */
+.social-box{
+margin-right: 93px;
+}
 .footer-titles{
     color: var(--title-color);
 font-family: "Roboto";
@@ -556,6 +571,7 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
     width: 20px;
 height: 20px;
 }
+/* Розсилка */
 .mailing-title{
 color: var(--title-color);
 font-family: "Roboto";
@@ -597,6 +613,7 @@ border: none;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-right: 2px;
 }
 .mailing-icon{
     width: 24px;
@@ -643,11 +660,15 @@ right: 8px;
 display: flex;
 justify-content: center;
 align-items: center;
+border: none;
 }
 .modal-cros{
     width: 18px;
 height: 18px;
 fill: var(--logo-color);
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
 }
 .modal-close:hover,
 .modal-close:focus{
@@ -677,6 +698,9 @@ margin-bottom: 12px;
     display: flex;
     justify-content: center;
     align-items: baseline;
+    transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
 }
 .modal-label{
     color: var(--text-color);
@@ -696,6 +720,9 @@ display: block;
 margin-top: 4px;
 margin-bottom: 10px;
 padding-left: 42px;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
 }
 .modal-input:hover,
 .modal-input:focus{
