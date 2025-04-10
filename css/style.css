@@ -346,9 +346,9 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
     fill: var(--costomers);
     width: 20px;
 height: 20px;
-transition-property: color;
+transition-property: fill;
 transition-duration: 250ms;
-transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1); 
 }
 /* Постійні клієнти */
 .customers{
@@ -383,8 +383,14 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .customers-link:hover{
     border: 1px solid var(--accent-color);
+    transition-property: color;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
     .customers-icon{
         fill: var(--accent-color);
+        transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1)
         }
 }
 .customers-icon{
@@ -439,9 +445,13 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 .portfolio-item:hover{
     .position-text{
         opacity: 1;
+        transform: translateY(0);
     }
 }
  .position-text{
+    transition-property:transform ;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
     color: var(--title-color);
 font-family: "Roboto";
 font-size: 18px;
@@ -456,6 +466,7 @@ padding: 63px 24px;
 background-color: var(--portfolio-bg);
 z-index: 1;
 opacity: 0;
+transform: translateY(100%);
  }
 .portfolio-item{
     outline: 1px solid var(--border-color);
@@ -640,6 +651,13 @@ box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0
 width: 528px;
 position: relative;
 padding: 40px;
+transform: translate(0);
+transition-property: transform;
+transition-duration: 1500ms;
+transition-timing-function: ease-in;
+}
+.is-hidden .modal{
+    transform: translateY(1000px) rotate(720deg);
 }
 .is-hidden{
     opacity: 0;
