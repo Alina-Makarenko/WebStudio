@@ -1,0 +1,40 @@
+/* Чим ми займаємось? */
+.works{
+    padding-bottom: 94px;
+    text-align: center;
+}
+.works-subtitle{
+    color:var(--subtitles-color);
+    font-size: 36px;
+font-weight: 700;
+line-height: 1.17;
+margin-bottom: 50px;
+}
+.works-list{
+    display: flex;
+    gap: 30px;
+}
+.works-item{
+    position: relative;
+}
+.works-pictures{
+    width: 370px;
+    height: 294px;
+}
+.works-text{
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background-color: var(--works-color);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}

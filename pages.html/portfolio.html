@@ -10,22 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/main.min.css">
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="container header-box">
-        <a class="header-logo">Web<span class="header-element">Studio</span></a>
+        <a class="header-logo animate__animated animate__flash">Web<span class="header-element">Studio</span></a>
         <nav class="header-navigation">
-          <ul class="nav-list">
+          <ul class="nav-list animate__animated animate__backInDown">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Студія</a>
+              <a class="nav-link active" href="./index.html">Студія</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../pages.html/portfolio.html"
+              <a class="nav-link" href="./pages.html/portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -34,19 +38,19 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-list">
+        <ul class="header-list animate__animated animate__backInUp">
           <li class="header-item">
             <a class="header-link" href="mailto:info@devstudio.com"
               ><svg class="header-icon">
-                <use href="../images/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a
             >
           </li>
           <li class="header-item">
             <a class="header-link" href="tel:+380961111111"
-              ><svg class="header-icon">
-                <use
-                  href="../images/symbol-defs.svg#icon-smartphone"
-                ></use></svg>+38 096 111 11 11</a
+              ><svg class="header-icon icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -55,7 +59,7 @@
     <!-- Portfolio section -->
     <section class="portfolio">
       <div class="container">
-        <ul class="button-list">
+        <ul class="button-list" data-aos="fade-up">
           <li class="button-item">
             <button class="portfolio-btn" type="button">Усі</button>
           </li>
@@ -324,5 +328,9 @@
         
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
