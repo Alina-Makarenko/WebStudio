@@ -67,22 +67,11 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
-.header-box {
+.header__box {
   display: flex;
   align-items: center;
 }
-
-.nav-list {
-  display: flex;
-  gap: 50px;
-}
-
-.nav-item {
-  position: relative;
-}
-
-.header-logo {
+.header__logo {
   margin-right: 93px;
   color: var(--accent-color);
   font-family: Raleway;
@@ -90,12 +79,50 @@ body {
   line-height: 1.38;
   font-weight: 700;
 }
-
-span.header-element {
+.header__element {
   color: var(--logo-color);
 }
+.header__list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+.header__link {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__link:hover {
+  color: var(--accent-color);
+}
+.header__link:hover .header__icon {
+  fill: var(--accent-color);
+}
+.header__icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--text-color);
+  margin-right: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.nav-link {
+.nav__list {
+  display: flex;
+  gap: 50px;
+}
+.nav__item {
+  position: relative;
+}
+.nav__link {
   color: var(--subtitles-color);
   font-size: 14px;
   font-weight: 500;
@@ -105,12 +132,10 @@ span.header-element {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.active {
+.nav__link:hover {
   color: var(--accent-color);
 }
-
-.nav-link::after {
+.nav__link::after {
   content: "";
   display: block;
   width: 100%;
@@ -127,64 +152,20 @@ span.header-element {
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav-link:hover::after {
+.nav__link:hover::after {
   display: block;
   opacity: 1;
   transform: scale(1);
   /* visibility: visible; */
 }
 
-.nav-link:hover {
+.active {
   color: var(--accent-color);
-}
-
-.header-list {
-  display: flex;
-  gap: 50px;
-  margin-left: auto;
-}
-
-.header-link {
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-  display: flex;
-  align-items: center;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover {
-  color: var(--accent-color);
-}
-.header-link:hover .header-icon {
-  fill: var(--accent-color);
-}
-
-.header-icon {
-  width: 16px;
-  height: 12px;
-  fill: var(--text-color);
-  margin-right: 10px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
   width: 10px;
   height: 16px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-icon::before {
-  content: "";
 }
 
 /* Hero section */
