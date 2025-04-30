@@ -12,7 +12,7 @@ justify-content: center;
 }
 .modal{
     border-radius: 4px;
-background: var(--title-color);
+background: $title-color;
 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 width: 528px;
 position: relative;
@@ -21,22 +21,15 @@ transform: translate(0);
 transition-property: transform;
 transition-duration: 1500ms;
 transition-timing-function: ease-in;
-}
-.is-hidden .modal{
-    transform: translateY(1000px) rotate(720deg);
-}
-.is-hidden{
-    opacity: 0;
-    pointer-events: none;
-}
-.modal-close{
+
+&__close{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    fill: var(--title-color);
+    fill: $title-color;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
-    outline: 1px solid var(--btn-hover);
+    outline: 1px solid $btn-hover;
     background-color: transparent;
 position: absolute;
 top: 8px;
@@ -45,26 +38,28 @@ display: flex;
 justify-content: center;
 align-items: center;
 border: none;
+
+&:hover,
+.modal__close:focus{
+    border: 0px solid transparent;
+    outline: 1px solid $btn-hover;
+    .modal__cros{
+        fill: $accent-color;
+    }
+
 }
-.modal-cros{
+}
+&__cros{
     width: 18px;
 height: 18px;
-fill: var(--logo-color);
+fill: $logo-color;
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
 }
-.modal-close:hover,
-.modal-close:focus{
-    border: 0px solid transparent;
-    outline: 1px solid var(--btn-hover);
-    .modal-cros{
-        fill: var(--accent-color);
-    }
 
-}
-.modal-title{
-color: var(--subtitle-color);
+&__title{
+color: $subtitles-color;
 text-align: center;
 font-family: "Roboto";
 font-size: 20px;
@@ -73,7 +68,7 @@ line-height: 1.5;
 letter-spacing: 0.6px;
 margin-bottom: 12px;
 }
-.modal-icon{
+&__icon{
     width: 18px;
     height: 18px;
     position: absolute;
@@ -86,8 +81,8 @@ margin-bottom: 12px;
 transition-duration: 250ms;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
 }
-.modal-label{
-    color: var(--text-color);
+&__label{
+    color: $text-color;
 font-family: "Roboto";
 font-size: 12px;
 font-weight: 400;
@@ -95,7 +90,7 @@ line-height: 1.5;
 letter-spacing: 0.12px;
 position: relative;
 }
-.modal-input{
+&__input{
     width: 448px;
     height: 40px;
     border-radius: 4px;
@@ -106,18 +101,20 @@ margin-bottom: 10px;
 padding-left: 42px;
 transition-property: color;
 transition-duration: 250ms;
-transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
-}
-.modal-input:hover,
-.modal-input:focus{
+transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
+
+&:hover,
+.modal__input:focus{
     border: none;
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
+    & + .modal__icon,
+.modal__input:focus + .modal-icon{
+    fill: $accent-color;
 }
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon{
-    fill: var(--accent-color);
 }
-.modal-coment{
+}
+
+&__coment{
     width: 100%;
     height: 120px;
     border-radius: 4px;
@@ -133,18 +130,18 @@ letter-spacing: 0.12px;
 margin-bottom: 20px;
 margin-top: 4px;
 }
-.modal-wrap{
+&__wrap{
 display: flex;
 align-items: center;
 justify-content: center;
 }
-.modal-chek{
+&__chek{
     width: 16px;
 height: 15px;
 color: black;
 }
-.modal-text{
-    color: var(--text-color);
+&__text{
+    color: $text-color;
 font-family: "Roboto";
 font-size: 14px;
 font-weight: 400;
@@ -153,8 +150,8 @@ letter-spacing: 0.42px;
 margin-right: 5px;
 margin-left: 8px;
 }
-.modal-link{
-    color: var(--accent-color);
+&__link{
+    color: $accent-color;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
@@ -167,23 +164,32 @@ margin-left: 8px;
     text-underline-offset: auto;
     text-underline-position: from-font; 
 }
-.modal-box{
+&__box{
     display: flex;
     justify-content: center;
 }
-.modal-btn{
+&__btn{
     width: 200px;
 height: 50px;
-color: var(--title-color);
+color: $title-color;
 font-family: "Roboto";
 font-size: 16px;
 font-weight: 700;
 line-height: 1,87;
 letter-spacing: 0.96px;
 border-radius: 4px;
-background: var(--accent-color);
+background: $accent-color;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 padding: 10px 52px;
 margin-top: 30px;
 border: none;
+}
+
+}
+.is-hidden .modal{
+    transform: translateY(1000px) rotate(720deg);
+}
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
 }

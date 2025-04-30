@@ -503,18 +503,16 @@ body {
   background-color: rgb(47, 48, 58);
   padding-top: 60px;
   padding-bottom: 60px;
+  /* Посилання  */
 }
-
-.footer-list {
+.footer__list {
   display: flex;
   align-items: baseline;
 }
-
-.link-box {
+.footer__wrapper {
   margin-right: 70px;
 }
-
-.footer-logo {
+.footer__logo {
   color: rgb(33, 150, 243);
   font-family: "Raleway";
   font-size: 26px;
@@ -524,44 +522,33 @@ body {
   display: inline-block;
   margin-bottom: 20px;
 }
-
-span.footer-elemen {
+.footer__elemen {
   color: rgb(255, 255, 255);
 }
-
-.footer-link {
+.footer__link {
   color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-
-.footer-address {
+.footer__address {
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-
-.contact-item:first-child {
-  margin-bottom: 9px;
-}
-
-.footer-contact {
+.footer__contact {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-
-/* Посилання  */
-.social-box {
+.footer__wrap {
   margin-right: 93px;
 }
-
-.footer-titles {
+.footer__titles {
   color: rgb(255, 255, 255);
   font-family: "Roboto";
   font-size: 14px;
@@ -570,13 +557,11 @@ span.footer-elemen {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-.footer-elements {
+.footer__elements {
   display: flex;
   gap: 10px;
 }
-
-.footer-links {
+.footer__links {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -588,22 +573,20 @@ span.footer-elemen {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-links:hover {
+.footer__links:hover {
   background-color: rgb(33, 150, 243);
 }
-.footer-links:hover .footer-icon {
+.footer__links:hover .footer__icon {
   fill: rgb(255, 255, 255);
 }
-
-.footer-icon {
+.footer__icon {
   fill: rgb(255, 255, 255);
   width: 20px;
   height: 20px;
 }
 
 /* Розсилка */
-.mailing-title {
+.mailing__title {
   color: rgb(255, 255, 255);
   font-family: "Roboto";
   font-size: 14px;
@@ -613,13 +596,11 @@ span.footer-elemen {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-.mailing-form {
+.mailing__form {
   display: flex;
   align-items: center;
 }
-
-.mailing-input {
+.mailing__input {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -629,8 +610,7 @@ span.footer-elemen {
   margin-right: 12px;
   padding-left: 16px;
 }
-
-.mailing-btn {
+.mailing__btn {
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -649,12 +629,15 @@ span.footer-elemen {
   justify-content: center;
   margin-right: 2px;
 }
-
-.mailing-icon {
+.mailing__icon {
   width: 24px;
   height: 24px;
   fill: rgb(255, 255, 255);
   margin-left: 10px;
+}
+
+.contact__item:first-child {
+  margin-bottom: 9px;
 }
 
 /* Model */
@@ -672,7 +655,7 @@ span.footer-elemen {
 
 .modal {
   border-radius: 4px;
-  background: var(--title-color);
+  background: rgb(255, 255, 255);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   width: 528px;
   position: relative;
@@ -682,24 +665,14 @@ span.footer-elemen {
   transition-duration: 1500ms;
   transition-timing-function: ease-in;
 }
-
-.is-hidden .modal {
-  transform: translateY(1000px) rotate(720deg);
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal-close {
+.modal__close {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  fill: var(--title-color);
+  fill: rgb(255, 255, 255);
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-  outline: 1px solid var(--btn-hover);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   position: absolute;
   top: 8px;
@@ -709,28 +682,25 @@ span.footer-elemen {
   align-items: center;
   border: none;
 }
-
-.modal-cros {
+.modal__close:hover,
+.modal__close .modal__close:focus {
+  border: 0px solid transparent;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal__close:hover .modal__cros,
+.modal__close .modal__close:focus .modal__cros {
+  fill: rgb(33, 150, 243);
+}
+.modal__cros {
   width: 18px;
   height: 18px;
-  fill: var(--logo-color);
+  fill: rgb(0, 0, 0);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close:hover,
-.modal-close:focus {
-  border: 0px solid transparent;
-  outline: 1px solid var(--btn-hover);
-}
-.modal-close:hover .modal-cros,
-.modal-close:focus .modal-cros {
-  fill: var(--accent-color);
-}
-
-.modal-title {
-  color: var(--subtitle-color);
+.modal__title {
+  color: rgb(33, 33, 33);
   text-align: center;
   font-family: "Roboto";
   font-size: 20px;
@@ -739,8 +709,7 @@ span.footer-elemen {
   letter-spacing: 0.6px;
   margin-bottom: 12px;
 }
-
-.modal-icon {
+.modal__icon {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -753,9 +722,8 @@ span.footer-elemen {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-label {
-  color: var(--text-color);
+.modal__label {
+  color: rgb(117, 117, 117);
   font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
@@ -763,8 +731,7 @@ span.footer-elemen {
   letter-spacing: 0.12px;
   position: relative;
 }
-
-.modal-input {
+.modal__input {
   width: 448px;
   height: 40px;
   border-radius: 4px;
@@ -777,19 +744,18 @@ span.footer-elemen {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-input:hover,
-.modal-input:focus {
+.modal__input:hover,
+.modal__input .modal__input:focus {
   border: none;
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid rgb(33, 150, 243);
 }
-
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
-  fill: var(--accent-color);
+.modal__input:hover + .modal__icon,
+.modal__input:hover .modal__input:focus + .modal-icon,
+.modal__input .modal__input:focus + .modal__icon,
+.modal__input .modal__input:focus .modal__input:focus + .modal-icon {
+  fill: rgb(33, 150, 243);
 }
-
-.modal-coment {
+.modal__coment {
   width: 100%;
   height: 120px;
   border-radius: 4px;
@@ -805,21 +771,18 @@ span.footer-elemen {
   margin-bottom: 20px;
   margin-top: 4px;
 }
-
-.modal-wrap {
+.modal__wrap {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.modal-chek {
+.modal__chek {
   width: 16px;
   height: 15px;
   color: black;
 }
-
-.modal-text {
-  color: var(--text-color);
+.modal__text {
+  color: rgb(117, 117, 117);
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
@@ -828,9 +791,8 @@ span.footer-elemen {
   margin-right: 5px;
   margin-left: 8px;
 }
-
-.modal-link {
-  color: var(--accent-color);
+.modal__link {
+  color: rgb(33, 150, 243);
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
@@ -844,25 +806,32 @@ span.footer-elemen {
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
-
-.modal-box {
+.modal__box {
   display: flex;
   justify-content: center;
 }
-
-.modal-btn {
+.modal__btn {
   width: 200px;
   height: 50px;
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 700;
   line-height: 1, 87;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  background: var(--accent-color);
+  background: rgb(33, 150, 243);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px 52px;
   margin-top: 30px;
   border: none;
+}
+
+.is-hidden .modal {
+  transform: translateY(1000px) rotate(720deg);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
