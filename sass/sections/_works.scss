@@ -2,39 +2,40 @@
 .works{
     padding-bottom: 94px;
     text-align: center;
-}
-.works__subtitle{
-    color:$subtitles-color;
-    font-size: 36px;
-font-weight: 700;
-line-height: 1.17;
-margin-bottom: 50px;
-}
-.works-list{
-    display: flex;
-    gap: 30px;
-}
-.works__item{
-    position: relative;
-}
-.works-pictures{
-    width: 370px;
-    height: 294px;
-}
-.works-text{
-    color: $title-color;
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 14px;
+
+    &__subtitle{
+        color:$subtitles-color;
+        font-size: 36px;
     font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    background-color: $works-color;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+    }
+    &__list{
+        display: flex;
+        gap: 30px;
+    }
+    &__item{
+        position: relative;
+    }
+    &__pictures{
+        width: 370px;
+        height: 294px;
+    }
+    &__text{
+        color: $title-color;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        background-color: $works-color;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
 }

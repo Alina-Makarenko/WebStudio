@@ -237,7 +237,6 @@ body {
   padding-bottom: 94px;
   text-align: center;
 }
-
 .works__subtitle {
   color: rgb(33, 33, 33);
   font-size: 36px;
@@ -245,22 +244,18 @@ body {
   line-height: 1.17;
   margin-bottom: 50px;
 }
-
-.works-list {
+.works__list {
   display: flex;
   gap: 30px;
 }
-
 .works__item {
   position: relative;
 }
-
-.works-pictures {
+.works__pictures {
   width: 370px;
   height: 294px;
 }
-
-.works-text {
+.works__text {
   color: rgb(255, 255, 255);
   text-align: center;
   font-family: "Roboto";
@@ -280,7 +275,7 @@ body {
 
 /* Наша команда */
 .team {
-  background-color: var(--background-color);
+  background-color: rgb(245, 244, 250);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -296,15 +291,76 @@ body {
   display: flex;
   gap: 30px;
 }
+.team__item {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.team__picture {
+  width: 270px;
+  height: 260px;
+}
+.team__employees {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-radius: 4px;
+}
+.team__subtitles {
+  color: rgb(33, 33, 33);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+.team__text {
+  color: rgb(117, 117, 117);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+}
+.team__elements {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.team__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__link:hover {
+  background-color: rgb(33, 150, 243);
+}
+.team__link:hover .team__icon {
+  fill: rgb(255, 255, 255);
+}
+.team__icon {
+  fill: rgb(175, 177, 184);
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Постійні клієнти */
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.customers-title {
-  color: var(--subtitle-color);
+.customers__title {
+  color: rgb(33, 33, 33);
   text-align: center;
   font-family: "Roboto";
   font-size: 36px;
@@ -313,17 +369,15 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-
-.customers-list {
+.customers__list {
   display: flex;
   gap: 30px;
 }
-
-.customers-link {
+.customers__link {
   width: 170px;
   height: 92px;
   border-radius: 4px;
-  border: 1px solid var(--costomers);
+  border: 1px solid rgb(175, 177, 184);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,45 +385,34 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.customers-link:hover {
-  border: 1px solid var(--accent-color);
+.customers__link:hover {
+  border: 1px solid rgb(33, 150, 243);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-link:hover .customers-icon {
-  fill: var(--accent-color);
+.customers__link:hover .customers__icon {
+  fill: rgb(33, 150, 243);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.customers-icon {
+.customers__icon {
   width: 106px;
   height: 60px;
-  fill: var(--costomers);
+  fill: rgb(175, 177, 184);
 }
 
 /* Портфоліо */
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--title-color);
-  border: 1px solid var(--portfolio-color);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(236, 236, 236);
 }
-
-.button-list {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-  flex-wrap: nowrap;
-}
-
-.portfolio-btn {
-  background-color: var(--background-color);
-  color: var(--subtitles-color);
+.portfolio__btn {
+  background-color: rgb(245, 244, 250);
+  color: rgb(33, 33, 33);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -382,34 +425,63 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-btn:hover {
-  background-color: var(--accent-color);
-  color: var(--title-color);
-  box-shadow: 0px 3px 1px 0px var(--btn-hover), 0px 1px 2px 0px var(--btn-portfolio), 0px 2px 2px 0px var(--shadow);
+.portfolio__btn:hover {
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
-
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-
-.portfolio-position {
+.portfolio__position {
   position: relative;
   overflow: hidden;
 }
-
-.portfolio-item:hover .position-text {
+.portfolio__item {
+  outline: 1px solid rgb(238, 238, 238);
+  flex-basis: calc((100% - 60px) / 3);
+}
+.portfolio__item:hover .position__text {
   opacity: 1;
   transform: translateY(0);
 }
+.portfolio__item:hover {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.portfolio__info {
+  padding: 20px 24px;
+}
+.portfolio__title {
+  color: rgb(33, 33, 33);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+  margin-bottom: 4px;
+}
+.portfolio__text {
+  color: rgb(117, 117, 117);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.48px;
+}
 
-.position-text {
+.button__list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  flex-wrap: nowrap;
+}
+
+.position__text {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
   font-family: "Roboto";
   font-size: 18px;
   font-weight: 400;
@@ -420,45 +492,15 @@ body {
   right: 0;
   bottom: 0;
   padding: 63px 24px;
-  background-color: var(--portfolio-bg);
+  background-color: rgba(33, 150, 243, 0.9);
   z-index: 1;
   opacity: 0;
   transform: translateY(100%);
 }
 
-.portfolio-item {
-  outline: 1px solid var(--border-color);
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.portfolio-item:hover {
-  box-shadow: 0px 1px 1px 0px var(--shadow), 0px 4px 4px 0px var(--portfolio-item), 1px 4px 6px 0px var(--item);
-}
-
-.portfolio-info {
-  padding: 20px 24px;
-}
-
-.portfolio-title {
-  color: var(--subtitles-color);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 1.08px;
-  margin-bottom: 4px;
-}
-
-.portfolio-text {
-  color: var(--text-color);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.87;
-  letter-spacing: 0.48px;
-}
-
 /* Footer */
 .footer {
-  background-color: var(--hero-section);
+  background-color: rgb(47, 48, 58);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -473,7 +515,7 @@ body {
 }
 
 .footer-logo {
-  color: var(--accent-color);
+  color: rgb(33, 150, 243);
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -484,11 +526,11 @@ body {
 }
 
 span.footer-elemen {
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
 }
 
 .footer-link {
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -496,7 +538,7 @@ span.footer-elemen {
 }
 
 .footer-address {
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -507,7 +549,7 @@ span.footer-elemen {
 }
 
 .footer-contact {
-  color: var(--contact-color);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -520,7 +562,7 @@ span.footer-elemen {
 }
 
 .footer-titles {
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
@@ -537,7 +579,7 @@ span.footer-elemen {
 .footer-links {
   width: 44px;
   height: 44px;
-  background-color: var(--footer);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -548,21 +590,21 @@ span.footer-elemen {
 }
 
 .footer-links:hover {
-  background-color: var(--accent-color);
+  background-color: rgb(33, 150, 243);
 }
 .footer-links:hover .footer-icon {
-  fill: var(--title-color);
+  fill: rgb(255, 255, 255);
 }
 
 .footer-icon {
-  fill: var(--title-color);
+  fill: rgb(255, 255, 255);
   width: 20px;
   height: 20px;
 }
 
 /* Розсилка */
 .mailing-title {
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
@@ -592,9 +634,9 @@ span.footer-elemen {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: var(--accent-color);
+  background: rgb(33, 150, 243);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -611,7 +653,7 @@ span.footer-elemen {
 .mailing-icon {
   width: 24px;
   height: 24px;
-  fill: var(--title-color);
+  fill: rgb(255, 255, 255);
   margin-left: 10px;
 }
 
