@@ -1,6 +1,6 @@
 /* Footer */
 .footer{
-    background-color: var(--hero-section);
+    background-color: $hero-section;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -12,7 +12,7 @@
     margin-right: 70px;
 }
 .footer-logo{
-    color: var(--accent-color);
+    color: $accent-color;
 font-family: "Raleway";
 font-size: 26px;
 font-weight: 700;
@@ -22,17 +22,17 @@ display: inline-block;
 margin-bottom: 20px;
 }
 span.footer-elemen{
-    color:var(--title-color);
+    color:$title-color;
 }
 .footer-link{
-    color:var(--title-color);
+    color:$title-color;
 font-size: 14px;
 font-weight: 400;
 line-height:1.71;
 letter-spacing: 0.42px;
 }
 .footer-address{
-    color:var(--title-color);
+    color:$title-color;
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -41,7 +41,7 @@ letter-spacing: 0.42px;
     margin-bottom: 9px;
  }
 .footer-contact{
-    color:var(--contact-color);
+    color:$contact-color;
     font-size: 14px;
 font-weight: 400;
 line-height: 1.71;
@@ -52,7 +52,7 @@ letter-spacing: 0.42px;
 margin-right: 93px;
 }
 .footer-titles{
-    color: var(--title-color);
+    color: $title-color;
 font-family: "Roboto";
 font-size: 14px;
 font-weight: 700;
@@ -67,7 +67,7 @@ margin-bottom: 20px;
 .footer-links{
     width: 44px;
 height: 44px;
-background-color: var(--footer);
+background-color: $footer;
 border-radius: 50%;
 display: flex;
 justify-content: center;
@@ -77,19 +77,19 @@ transition-duration: 250ms;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .footer-links:hover{
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     .footer-icon{
-        fill: var(--title-color);
+        fill: $title-color;
     }
 }
 .footer-icon{
-    fill: var(--title-color);
+    fill: $title-color;
     width: 20px;
 height: 20px;
 }
 /* Розсилка */
 .mailing-title{
-    color: var(--title-color);
+    color: $title-color;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 700;
@@ -116,9 +116,9 @@ height: 20px;
         width: 200px;
     height: 50px;
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-family: "Roboto";
     font-size: 16px;
@@ -134,6 +134,6 @@ height: 20px;
     .mailing-icon{
         width: 24px;
         height: 24px;
-        fill: var(--title-color);
+        fill: $title-color;
         margin-left: 10px;
     }

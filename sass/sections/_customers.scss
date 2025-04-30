@@ -4,7 +4,7 @@
     padding-bottom: 94px;   
 }
 .customers-title{
-    color: var(--subtitle-color);
+    color: $subtitle-color;
 text-align: center;
 font-family: "Roboto";
 font-size: 36px;
@@ -21,7 +21,7 @@ margin-bottom: 50px;
     width: 170px;
 height: 92px;
     border-radius: 4px;
-border: 1px solid var(--costomers);
+border: 1px solid $costomers;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -30,12 +30,12 @@ transition-duration: 250ms;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .customers-link:hover{
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     transition-property: color;
 transition-duration: 250ms;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
     .customers-icon{
-        fill: var(--accent-color);
+        fill: $accent-color;
         transition-property: fill;
 transition-duration: 250ms;
 transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1)
@@ -44,5 +44,5 @@ transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1)
 .customers-icon{
     width: 106px;
 height: 60px;
-fill: var(--costomers);
+fill: $costomers;
 }

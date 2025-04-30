@@ -3,8 +3,8 @@
     padding-bottom: 94px;
     text-align: center;
 }
-.works-subtitle{
-    color:var(--subtitles-color);
+.works__subtitle{
+    color:$subtitles-color;
     font-size: 36px;
 font-weight: 700;
 line-height: 1.17;
@@ -14,7 +14,7 @@ margin-bottom: 50px;
     display: flex;
     gap: 30px;
 }
-.works-item{
+.works__item{
     position: relative;
 }
 .works-pictures{
@@ -22,7 +22,7 @@ margin-bottom: 50px;
     height: 294px;
 }
 .works-text{
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-family: "Roboto";
     font-size: 14px;
@@ -30,7 +30,7 @@ margin-bottom: 50px;
     line-height: 1.5;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    background-color: var(--works-color);
+    background-color: $works-color;
     width: 100%;
     position: absolute;
     bottom: 0;

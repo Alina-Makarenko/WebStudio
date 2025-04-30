@@ -7,30 +7,31 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position:center ;
-}
-.hero-title{
-    color: var(--title-color);
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:30px ;
-}
-.hero-button{
-    background-color:var(--accent-color);
-    top: 430px;
-    left: 692px;
-    color:var(--title-color);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    padding:10px 32px ;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0px 4px 4px 0px var(--button);
+
+    &__title{
+        color: $title-color;
+        text-align: center;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+        width: 696px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:30px ;
+    }
+    &__button{
+        background-color:$accent-color;
+        top: 430px;
+        left: 692px;
+        color:$title-color;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        padding:10px 32px ;
+        border-radius: 4px;
+        border: none;
+        box-shadow: 0px 4px 4px 0px var(--button);
+    }
 }
