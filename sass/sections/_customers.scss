@@ -1,10 +1,10 @@
 /* Постійні клієнти */
-.customers{
-    padding-top: 94px;
-    padding-bottom: 94px;   
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-    &__title{
-        color: $subtitles-color;
+  &__title {
+    color: $subtitles-color;
     text-align: center;
     font-family: "Roboto";
     font-size: 36px;
@@ -12,42 +12,41 @@
     line-height: 1.5;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-    }
-    &__list{
-        display: flex;
-        gap: 30px;
-    }
-    &__link{
-        width: 170px;
-    height: 92px;
-        border-radius: 4px;
-    border: 1px solid $costomers;
+  }
+  &__list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-property:fill;
+    gap: 30px;
+  }
+  &__link {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid $costomers;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include flex-box();
+    transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover{
-        border: 1px solid $accent-color;
-        transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-        .customers__icon{
-            fill: $accent-color;
-            transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1)
-            }
+    &:hover {
+      border: 1px solid $accent-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      .customers__icon {
+        fill: $accent-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
     }
-    }
+  }
 
-    
-    &__icon{
-        width: 106px;
+  &__icon {
+    width: 106px;
     height: 60px;
     fill: $costomers;
-    }
+  }
 }
-

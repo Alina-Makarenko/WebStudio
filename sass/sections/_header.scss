@@ -1,114 +1,113 @@
 /* Header */
-.header{
-    padding-top: 24px;
-    padding-bottom: 25px;
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 
-    &__box{
-        display: flex;
-        align-items: center;
-    }
+  &__box {
+    // display: flex;
+    // align-items: center;
+    @include flex-box($wrap: nowrap);
+  }
 
-    &__logo{
-        margin-right: 93px;
-        color:$accent-color;
-        font-family:"Raleway";
-        font-size: 26px;
-        line-height: 1.38;
-        font-weight: 700;
-    }
-    &__element{
-        color: $logo-color;
-    }
-    &__list{
-        display: flex;
-        gap: 50px;
-        margin-left: auto;
-    }   
-    &__link{
-        color:$text-color;
-        font-size: 14px;
+  &__logo {
+    margin-right: 93px;
+    color: $accent-color;
+    font-family: "Raleway";
+    font-size: 26px;
+    line-height: 1.38;
+    font-weight: 700;
+  }
+  &__element {
+    color: $logo-color;
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+  }
+  &__link {
+    color: $text-color;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
     display: flex;
-        align-items: center;
-        transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
+    align-items: center;
+    transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
+    @extend %transition;
 
-    &:hover{
-        color: $accent-color;
-        .header__icon{
-            fill: $accent-color;
-            }
+    &:hover {
+      color: $accent-color;
+      .header__icon {
+        fill: $accent-color;
+      }
     }
-    }
-    &__icon{
-        width: 16px;
+  }
+  &__icon {
+    width: 16px;
     height: 12px;
     fill: $text-color;
-    margin-right:  10px; ;
+    margin-right: 10px;
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) 
-    }
-
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
+.nav {
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
 
-.nav{
-
-    &__list{
-        display: flex;
-        gap: 50px;
-    }
-
-    &__item{
-        position: relative;
-    }
-    &__link{
-        color:$subtitles-color;
-        font-size: 14px;
+  &__item {
+    position: relative;
+  }
+  &__link {
+    color: $subtitles-color;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover{
-        color: $accent-color;
+    &:hover {
+      color: $accent-color;
     }
-    &::after{
-        content: "";
-        display: block;
-        width: 100%;
-        height: 5px;
-        background-color: $accent-color;
-        border-radius: 10px;
-       position: absolute;
-       left: 0px;
-       bottom: -34px;
-       opacity: 0;
-       transform: scale(0);
-       /* visibility: hidden; */
-       transition-property: opacity, transform;
-    transition-duration: 300ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: $accent-color;
+      border-radius: 10px;
+      position: absolute;
+      left: 0px;
+      bottom: -34px;
+      opacity: 0;
+      transform: scale(0);
+      /* visibility: hidden; */
+      transition-property: opacity, transform;
+      @extend %transition;
+      // transition-duration: 300ms;
+      // transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1) ;
     }
-    &:hover::after{
-        display: block;
-        opacity: 1;
-        transform: scale(1);
-        /* visibility: visible; */
+    &:hover::after {
+      display: block;
+      opacity: 1;
+      transform: scale(1);
+      /* visibility: visible; */
     }
-    }
+  }
 }
-.active{
-    color: $accent-color; 
+.active {
+  color: $accent-color;
 }
-.icon{
-    width: 10px;
-height: 16px;
+.icon {
+  width: 10px;
+  height: 16px;
 }
-
