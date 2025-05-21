@@ -32,6 +32,11 @@
           >Web<span class="header__element">Studio</span></a
         >
         <nav class="nav">
+          <button class="nav-btn" data-mobail-open>
+            <svg class="nav-menu"> 
+            <use href="./images/symbol-defs.svg#icon-menu">
+            </use></svg>
+          </button>
           <ul class="nav__list animate__animated animate__backInDown">
             <li class="nav__item">
               <a class="nav__link active" href="./index.html">Студія</a>
@@ -59,6 +64,22 @@
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        <div class="mobile is-hidden" data-mobail>
+          <button type="button" data-mobail-close class="modal__close">
+            <svg class="modal__icon">
+              <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="mobile-list">
+            <li class="mobile-item"><a href="./index.html" class="mobile-link">Студія</a></li>
+            <li class="mobile-item"><a href="./pages.html/portfolio.html" class="mobile-link">Портфоліо</a></li>
+            <li class="mobile-item"><a href="./#" class="mobile-link">Контакти</a></li>
+          </ul>
+          <ul class="mobile-items">
+            <li class="mobile-itm"><a href="tel:+" class="mobile-links"></a></li>
+            <li class="mobile-itm"><a href="mailto" class="mobile-links"></a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
