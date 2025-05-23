@@ -156,7 +156,6 @@
     border: 1px solid $border-mailing;
     background: $mailing-color;
     box-shadow: 0px 4px 4px 0px $button;
-    margin-right: 12px;
     padding-left: 16px;
 
     @media screen and (min-width: 480px) {
@@ -164,6 +163,7 @@
     }
     @media screen and (min-width: 1200px) {
       width: 358px;
+      margin-right: 12px;
     }
   }
   &__btn {
@@ -183,7 +183,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: auto;
   }
   &__icon {
     width: 24px;

@@ -9,9 +9,9 @@
     padding: 25px 0;
   }
   &__box {
-    // display: flex;
-    // align-items: center;
-    @include flex-box($wrap: nowrap);
+    display: flex;
+    align-items: center;
+    // @include flex-box($wrap: nowrap);
   }
 
   &__logo {
@@ -34,6 +34,24 @@
   }
   &__element {
     color: $logo-color;
+  }
+  &__btn{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+
+  }
+  &__ic{
+    width: 32px;
+    height: 28px;
+    fill: $logo-color;
   }
   &__list {
     display: none;
