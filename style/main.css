@@ -226,7 +226,8 @@ body {
 .nav__link_btn {
   visibility: 0;
 }
-.nav .mobile {
+
+.mobile {
   position: absolute;
   top: 0;
   left: 0;
@@ -236,7 +237,7 @@ body {
   opacity: 1;
   z-index: 1;
 }
-.nav .mobile_close {
+.mobile_close {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -247,17 +248,13 @@ body {
   align-items: center;
   background-color: transparent;
 }
-.nav .mobile_icon {
+.mobile_icon {
   width: 30px;
   width: 30px;
   fill: rgb(117, 117, 117);
 }
-.nav .mobile_icon:hover .mobile-icon, .nav .mobile_icon:focus .mobile-icon {
+.mobile_icon:hover .mobile-icon, .mobile_icon:focus .mobile-icon {
   fill: rgb(33, 150, 243);
-}
-.nav .is-hidden {
-  pointer-events: none;
-  opacity: 0;
 }
 
 .active {
@@ -269,6 +266,11 @@ body {
   height: 16px;
 }
 
+.is-hiden {
+  pointer-events: none;
+  opacity: 0;
+}
+
 /* Hero section */
 .hero {
   padding-top: 118px;
@@ -276,7 +278,7 @@ body {
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.webp);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
 }
 @media screen and (min-width: 1200px) {
@@ -387,7 +389,6 @@ body {
   background-image: url(../images/astronaut.webp);
 }
 .advantages__subtitles {
-  width: 270px;
   height: 16px;
   color: rgb(33, 33, 33);
   font-size: 14px;

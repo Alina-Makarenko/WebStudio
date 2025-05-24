@@ -28,7 +28,7 @@
     <!-- Header -->
     <header class="header">
       <div class="container header__box">
-        <a class="header__logo animate__animated animate__flash"
+        <a class="header__logo"
           >Web<span class="header__element">Studio</span></a
         >
         <button type="button" class="header__btn" data-mobail-open>
@@ -37,7 +37,7 @@
           </svg>
         </button>
         <nav class="nav">
-          <ul class="nav__list animate__animated animate__backInDown">
+          <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link active" href="./index.html">Студія</a>
             </li>
@@ -51,7 +51,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header__list animate__animated animate__backInUp">
+        <ul class="header__list">
           <li class="header__item">
             <a class="header__link" href="mailto:info@devstudio.com"
               ><svg class="header__icon">
@@ -64,7 +64,7 @@
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>
-        <div class="mobile is-hidden" data-mobail>
+        <div class="mobile is-hiden" data-mobail>
           <button type="button" data-mobail-close class="modal__close">
             <svg class="modal__icon">
               <use href="./images/symbol-defs.svg#icon-close_40px"></use>
@@ -84,14 +84,14 @@
     </header>
     <main class="main">
       <!-- Hero section -->
-      <section class="hero" data-aos="fade-down" data-aos-offset="400px">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero__title animate__animated animate__backInLeft">
+          <h1 class="hero__title">
             Ефективні рішення для вашого бізнесу
           </h1>
           <button
             type="button"
-            class="hero__button animate__animated animate__backInRight"
+            class="hero__button"
             data-modal-open
           >
             Замовити послугу
@@ -99,30 +99,30 @@
         </div>
       </section>
       <!-- Переваги наших послуг -->
-      <section class="advantages" data-aos="fade-right">
+      <section class="advantages">
         <div class="container">
           <ul class="advantages__list">
-            <li class="advantages__item" data-aos="fade-up">
+            <li class="advantages__item" >
               <h3 class="advantages__subtitles">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="advantages__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="advantages__item" data-aos="fade-down">
+            <li class="advantages__item" >
               <h3 class="advantages__subtitles">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="advantages__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="advantages__item" data-aos="fade-up">
+            <li class="advantages__item" >
               <h3 class="advantages__subtitles">ПЛАНУВАННЯ</h3>
               <p class="advantages__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="advantages__item" data-aos="fade-down">
+            <li class="advantages__item">
               <h3 class="advantages__subtitles">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="advantages__text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -133,11 +133,11 @@
         </div>
       </section>
       <!-- Чим ми займаємось? -->
-      <section class="works" data-aos="fade-left">
+      <section class="works">
         <div class="container">
           <h2 class="works__subtitle">Чим ми займаємося</h2>
-          <ul class="works__list animate__animated animate__fadeInRightBig">
-            <li class="works__item" data-aos="fade-down">
+          <ul class="works__list">
+            <li class="works__item">
               <img
                 class="works__pictures"
                 src="./images/glasses.webp"
@@ -146,7 +146,7 @@
               />
               <p class="works__text">Десктопні додатки</p>
             </li>
-            <li class="works__item" data-aos="fade-up">
+            <li class="works__item">
               <img
                 class="works__pictures"
                 src="./images/design-process.webp"
@@ -155,7 +155,7 @@
               />
               <p class="works__text">Мобільні додатки</p>
             </li>
-            <li class="works__item" data-aos="fade-down">
+            <li class="works__item">
               <img
                 class="works__pictures"
                 src="./images/colors.webp"
@@ -168,22 +168,22 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="team" data-aos="zoom-in">
+      <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
-            <li class="team__item" data-aos="flip-left">
+            <li class="team__item">
               <img
                 class="team__picture"
                 src="./images/product-designer.webp"
                 alt="product designer"
                 width="270"
               />
-              <div class="team__employees animate__animated animate__zoomIn">
+              <div class="team__employees">
                 <h3 class="team__subtitles">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
                 <ul
-                  class="team__elements animate__animated animate__backInLeft"
+                  class="team__elements"
                 >
                   <li class="team__element">
                     <a href="https://www.instagram.com/" class="team__link">
@@ -225,7 +225,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item" data-aos="flip-right">
+            <li class="team__item">
               <img
                 class="team__picture"
                 src="./images/frontend-developer.webp"
@@ -278,7 +278,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item" data-aos="flip-left">
+            <li class="team__item">
               <img
                 class="team__picture"
                 src="./images/marketing.webp"
@@ -331,7 +331,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item" data-aos="flip-right">
+            <li class="team__item">
               <img
                 class="team__picture"
                 src="./images/designer.webp"
@@ -388,46 +388,46 @@
         </div>
       </section>
       <!-- Постійні клієнти -->
-      <section class="customers" data-aos="zoom-in-up">
+      <section class="customers">
         <div class="container">
           <h2 class="customers__title">Постійні клієнти</h2>
           <ul class="customers__list">
-            <li class="customers__item" data-aos="fade-up">
+            <li class="customers__item">
               <a href="" class="customers__link">
                 <svg class="customers__icon">
                   <use href="./images/symbol-defs.svg#icon-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item" data-aos="fade-down">
+            <li class="customers__item">
               <a href="" class="customers__link">
                 <svg class="customers__icon">
                   <use href="./images/symbol-defs.svg#icon-here"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item" data-aos="fade-up">
+            <li class="customers__item">
               <a href="" class="customers__link">
                 <svg class="customers__icon">
                   <use href="./images/symbol-defs.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item" data-aos="fade-down">
+            <li class="customers__item">
               <a href="" class="customers__link">
                 <svg class="customers__icon">
                   <use href="./images/symbol-defs.svg#icon-foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item" data-aos="fade-up">
+            <li class="customers__item">
               <a href="" class="customers__link">
                 <svg class="customers__icon">
                   <use href="./images/symbol-defs.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers__item" data-aos="fade-down">
+            <li class="customers__item">
               <a href="" class="customers__link">
                 <svg class="customers__icon">
                   <use href="./images/symbol-defs.svg#icon-line"></use>
@@ -439,7 +439,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer" data-aos="fade-up" data-aos-duration="3000">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <a href="./index.html" class="footer__logo"
@@ -583,9 +583,7 @@
       </div>
     </div>
     <script src="./modal.js" type="module"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="./js/mobile.js" type="module"></script>
+    
   </body>
 </html>
