@@ -243,10 +243,12 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
   opacity: 1;
   z-index: 1;
+  padding: 48px 0 48px 40px;
 }
-.mobile_close {
+.mobile__close {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -255,15 +257,72 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   background-color: transparent;
 }
-.mobile_icon {
-  width: 30px;
-  width: 30px;
-  fill: rgb(117, 117, 117);
-}
-.mobile_icon:hover .mobile-icon, .mobile_icon:focus .mobile-icon {
+.mobile__close:hover .mobile-icon, .mobile__close:focus .mobile-icon {
   fill: rgb(33, 150, 243);
+}
+.mobile__icon {
+  width: 30px;
+  width: 30px;
+  fill: rgb(33, 33, 33);
+}
+.mobile__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 100px;
+}
+.mobile__link {
+  color: rgb(33, 33, 33);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.mobile__link:hover {
+  color: rgb(33, 150, 243);
+}
+.mobile__items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.mobile__contact {
+  color: rgb(33, 150, 243);
+  font-size: 34px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.mobile__itm:last-child .mobile__contact {
+  color: rgb(117, 117, 117);
+  font-size: 24px;
+  letter-spacing: 0.48px;
+}
+.mobile__elements {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.mobile__social {
+  color: rgb(33, 150, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+  display: flex;
+  align-items: center;
+}
+.mobile__elem:not(:last-child) .mobile__social::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+  display: block;
+  margin-left: 10px;
 }
 
 .is-hiden {
