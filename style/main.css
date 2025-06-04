@@ -227,6 +227,15 @@ body {
   visibility: 0;
 }
 
+.active {
+  color: rgb(33, 150, 243);
+}
+
+.icon {
+  width: 10px;
+  height: 16px;
+}
+
 .mobile {
   position: absolute;
   top: 0;
@@ -255,15 +264,6 @@ body {
 }
 .mobile_icon:hover .mobile-icon, .mobile_icon:focus .mobile-icon {
   fill: rgb(33, 150, 243);
-}
-
-.active {
-  color: rgb(33, 150, 243);
-}
-
-.icon {
-  width: 10px;
-  height: 16px;
 }
 
 .is-hiden {
